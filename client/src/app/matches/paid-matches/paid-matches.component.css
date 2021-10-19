@@ -1,0 +1,19 @@
+.root-container{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+.free-matches{
+    text-align: center;
+}
+.match-card{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 5px 10px 18px #3b3a3b;
+}
+.book{
+    margin-top: 1rem;
+}
+.description{
+    text-align: left;
+}

@@ -1,0 +1,43 @@
+<!-- web-view -->
+<app-navbar></app-navbar>
+<div class="container-fluid category-container">
+   <div class="row">
+      <div class="col-lg-3">
+        <div class="card category" style="width: 100%;">
+          <img src="../../assets/images/squad.jpg" class="card-img-top" alt="squad">
+          <div class="card-body">
+            <h5 class="card-title">Free</h5>
+            <button routerLink="/registerforfreematch" pButton pRipple type="button" label="Register" class="p-button-rounded p-button-danger"></button>
+          </div>
+        </div>        
+      </div>
+      <div class="col-lg-3">
+        <div class="card category" style="width: 100%;">
+          <img src="../../assets/images/duo.jpg" class="card-img-top" alt="duo">
+          <div class="card-body">
+            <h5 class="card-title">Paid</h5>
+            <button  routerLink="/registerforpaidmatch" pButton pRipple type="button" label="Register" class="p-button-rounded p-button-danger"></button>
+          </div>
+        </div>        
+      </div>
+      <div class="col-lg-3">
+        <div class="card category" style="width: 100%;">
+          <img src="../../assets/images/solo.jpeg" class="card-img-top" alt="solo">
+          <div class="card-body">
+            <h5 class="card-title">TDM</h5>
+            <button routerLink="/tdm" pButton pRipple type="button" label="Register" class="p-button-rounded p-button-danger"></button>
+          </div>
+        </div>        
+      </div>
+      <div class="col-lg-3">
+        <div class="card category" style="width: 100%;">
+          <img src="../../assets/images/host.jpg" class="card-img-top" alt="host">
+          <div class="card-body">
+            <h5 class="card-title">Host Your Match</h5>
+            <button  routerLink="/hostmatch" pButton pRipple type="button" label="Host" class="p-button-rounded p-button-danger"></button>
+          </div>
+        </div>        
+      </div> 
+   </div>
+</div>
+<app-button-nav-bar></app-button-nav-bar>

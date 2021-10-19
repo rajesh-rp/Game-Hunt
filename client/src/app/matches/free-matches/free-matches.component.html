@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="container-fluid root-container">
+   <!-- <h4 class="title">Upcoming Matches</h4> -->
+   <div class="free-matches">
+       <div class="row">
+         <div class="col-lg-3 match" *ngFor="let match of matches; index as i;">
+          <div class="card match-card" style="width: 100%;">
+            <img src="{{match.imagePath}}" class="card-img-top" alt="{{match.imagePath}}">
+            <div class="card-body">
+              <h5 class="card-title">{{match.mapName}}</h5>
+              <div class="row">
+                 <div class="col-12 description">
+                    <span>Type - </span>
+                    <span>{{match.type}}</span><br>
+                    <span>Date - </span>
+                    <span>{{match.date}}</span><br>
+                    <span>Room ID time - </span>
+                    <span>{{match.idPasswordTime}}</span><br>
+                    <span>Start time - </span>
+                    <span>{{match.startTime}}</span>
+                 </div>
+                 <!-- <div class="col-6">
+                  
+                </div> -->
+              </div>
+              <button (click)="slotBooking()"  pButton pRipple type="button" label="Book slot" class="p-button-rounded p-button-danger book"></button>
+            </div>
+          </div>
+         </div>
+       </div>
+   </div>
+</div>
+<app-button-nav-bar></app-button-nav-bar>

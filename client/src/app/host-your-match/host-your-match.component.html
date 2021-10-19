@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<div class="hostYourMatch">
+    <div class="logo">
+        <i class="fas fa-headset fa-3x"></i>
+      </div>
+    <h3 class="header">Host Your Match</h3>
+    <br>
+    <div class="dropdown form-control">
+        <button class="btn dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Choose Your Map
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Erangle</a></li>
+          <li><a class="dropdown-item" href="#">Sanhok</a></li>
+          <li><a class="dropdown-item" href="#">Miramar</a></li>
+          <li><a class="dropdown-item" href="#">Livik</a></li>
+          <li><a class="dropdown-item" href="#">Karakirin</a></li>
+        </ul>
+      </div>
+      <br>
+      <span class="p-float-label">
+        <input class="form-control" id="float-input" type="text" pInputText> 
+        <label for="float-input">Start Time</label>
+      </span>
+      <br>
+      <span class="p-float-label">
+        <input class="form-control" id="float-input" type="text" pInputText> 
+        <label for="float-input">Room Id Time</label>
+      </span>
+      <br>
+      <span class="p-float-label">
+        <input class="form-control" id="float-input" type="text" pInputText> 
+        <label for="float-input">Youtube Channel Link</label>
+      </span>
+      <br>
+      <button (click)="checkIfSignedUp()" pButton pRipple type="button" label="Host" class="p-button-rounded p-button-danger"></button>
+</div>
+<app-button-nav-bar></app-button-nav-bar>
+
+

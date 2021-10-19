@@ -1,0 +1,9 @@
+.root-container{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 98%;
+}
+.grid{
+    height: 250px;
+    width: 300px;
+}

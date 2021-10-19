@@ -1,0 +1,26 @@
+.match{
+    margin: 5%;
+}
+.matches{
+    text-align: center;
+}
+/* .web-view{
+  
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+} */
+
+.category-container{
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+ .category{
+    margin: auto;
+    margin-bottom: 1.5rem ;
+    width: 285px;
+    text-align: center;
+    box-shadow: 5px 10px 18px #3b3a3b;
+} 

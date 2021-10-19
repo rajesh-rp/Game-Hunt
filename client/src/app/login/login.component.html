@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+      <div class="login" id="login">
+        <!-- <h3 class="header">Game<span>Hunt</span>!</h3> -->
+        <!-- <img class="logo" src="../assets/images/logo.jpeg" alt=""> -->
+        <div class="logo">
+          <i class="fas fa-headset fa-3x"></i>
+        </div>
+      <br>
+      <form [formGroup]="logInForm" (ngSubmit)="onSubmit()">
+        <span class="p-float-label">
+          <input  class="form-control" id="float-input" type="text" pInputText formControlName="email"> 
+          <label for="float-input">Email Id</label>
+        </span>
+        <br>
+        <span class="p-float-label">
+          <input class="form-control" id="float-input" type="password" pInputText formControlName="password"> 
+          <label for="float-input">Password</label>
+        </span>
+        <br>
+      <button pButton pRipple type="submit" label="Sign in" class="p-button-rounded p-button-danger"></button>&nbsp;&nbsp;&nbsp;
+        <button routerLink="/signup" pButton pRipple type="button" label="Didn't have any account!" class="p-button-info p-button-text"></button>
+      </form>
+      
+    </div>

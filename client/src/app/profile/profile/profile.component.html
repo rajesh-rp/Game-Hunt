@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="root-container">
+        <div class="row">
+            <div class="col-12 top-part">
+                <div class="name">
+                    <span><i class="fas fa-user-circle profile-pic"></i></span>
+                    <span class="profile-name text">{{userDetails.name}}</span>    
+                    <span class="logout exit text"><i class="fas fa-sign-out-alt fa-2x"></i></span><br>
+                    <!-- <span class="edit-profile text" (click)="loadEditProfile()">Edit profile</span> -->
+                    <button pButton pRipple type="button"  (click)="loadEditProfile()" label="Edit profile" class="p-button-info p-button-text edit-profile"></button>
+                </div>
+            </div>
+            <div class="col-12 bottom-part">
+               <div class="row">
+                 <div class="col-12 details">
+                    <span><i class="far fa-user profile user-name"></i></span>
+                    <span class="profile-title text">User Name</span><br>
+                    <span class="profile-fullname">{{userDetails.userName}}</span>
+                 </div>
+                 <div class="col-12 details">
+                    <span><i class="far fa-envelope-open profile"></i></span>
+                    <span class="profile-title text">Email</span><br>
+                    <span class="profile-fullname">{{userDetails.email}}</span>
+                 </div>
+                 <div class="col-12 details">
+                    <span><i class="fas fa-fingerprint profile"></i></span>
+                    <span class="profile-title text">Password</span><br>
+                    <span class="profile-fullname">{{userDetails.password}}</span>
+                 </div>
+                 <div class="col-12 details">
+                    <span><i class="fas fa-mobile-alt profile1"></i></span>
+                    <span class="profile-title text">Mobile number</span><br>
+                    <span class="profile-fullname">{{userDetails.phoneNumber}}</span>
+                 </div>
+                 <div class="col-12 details" style="max-width: 300px;">
+                    <span><i class="fab fa-teamspeak profile"></i></span>
+                    <span class="profile-title">Team</span><br>
+                  
+                    <div class="players">
+                     <ol>
+                        <li> <span class="profile-fullname">{{userDetails.team[0]}}</span> </li>
+                        <li> <span class="profile-fullname">{{userDetails.team[1]}}</span> </li>
+                        <li> <span class="profile-fullname">{{userDetails.team[2]}}</span> </li>
+                        <li> <span class="profile-fullname">{{userDetails.team[3]}}</span> </li>
+                     </ol>
+                    </div>
+                 </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-button-nav-bar></app-button-nav-bar>

@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="root-container">
+        <div class="row">
+            <div class="col-12 top-part">
+                <div class="name">
+                    <span><i class="fas fa-user-circle profile-pic"></i></span>
+                    <span class="profile-name text">{{userDetails.name}}</span>
+                </div>
+            </div>
+            <div class="col-12 bottom-part">
+               <form class="ngForm" >
+                <div class="mb-3">
+                    <label  class="form-label text">User name</label>
+                    <input type="text" class="form-control" name="userName" [(ngModel)]="userDetails.userName">
+                  </div>
+                  <div class="mb-3">
+                    <label  class="form-label text">Email</label>
+                    <input type="email" class="form-control" name="email" [(ngModel)]="userDetails.email">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text">Password</label>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="userDetails.password">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text">Confirm Password</label>
+                    <input type="password" class="form-control" name="confirmPassword" [(ngModel)]="confirmPassword">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text">Phone Number</label>
+                    <input type="number" class="form-control" name="phoneNumber" [(ngModel)]="userDetails.phoneNumber">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text">Team</label>
+                    <div class="players">
+                        <label class="form-label text">Player 1</label>
+                        <input type="text" class="form-control" name="player1" [(ngModel)]="userDetails.team[0]">
+                        <label class="form-label text">Player 2</label>
+                        <input type="text" class="form-control" name="player2" [(ngModel)]="userDetails.team[1]">
+                        <label class="form-label text">Player 3</label>
+                        <input type="text" class="form-control" name="player3" [(ngModel)]="userDetails.team[2]">
+                        <label class="form-label text">Player 4</label>
+                        <input type="text" class="form-control" name="player4" [(ngModel)]="userDetails.team[3]">
+                    </div>
+                    
+                  </div>
+                  <button pButton pRipple type="button" label="Save" class="p-button-rounded p-button-danger"></button>
+               </form>
+            </div>
+        </div>
+    </div>
+</div>
+<app-button-nav-bar></app-button-nav-bar>

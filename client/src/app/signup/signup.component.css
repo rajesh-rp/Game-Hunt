@@ -1,0 +1,48 @@
+span{
+    color: brown;
+    
+}
+.header{
+    text-align: center;
+    margin-bottom: 2%;
+}
+.login{
+    background-color: #fff;
+    margin: 2% 35% 10% 35%;
+    padding: 5%;
+    width: 30%;
+    border-radius: 5%;
+}
+.logo{
+    margin-left: 39%;
+    margin-top: 4rem;
+    margin-bottom:1rem;
+    color: red ;
+}
+#login {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #3b3a3b;
+  }
+ 
+  @media only screen and (max-width: 600px) {
+    .login{
+        margin: 5% 4% 5% 3%;
+        padding: 3%;
+        width: 96%;
+    }
+    #login {
+        border: none;
+        box-shadow: none;
+      }
+  }
+
+
+  @media screen and (max-height: 633px) {
+    div.logo {
+        display: none !important; 
+    }
+  }
+  .submit-button{
+      margin-bottom:6rem ;   
+  }

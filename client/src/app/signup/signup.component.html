@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+      <div class="login container-fluid" id="login">
+          <!-- <h3 class="header">Game<span>Hunt</span>!</h3> -->
+          <!-- <img class="logo" src="../assets/images/logo.jpeg" alt=""> -->
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="logo">
+          <i class="fas fa-headset fa-3x"></i>
+        </div>
+        
+      <br>
+      <span class="p-float-label">
+        <input class="form-control" id="float-input" type="text" pInputText formControlName="name"> 
+        <label for="float-input">Name</label>
+      </span>
+      <br>
+      <span class="p-float-label">
+        <input class="form-control" id="float-input" type="text" pInputText formControlName="userName">  
+        <label for="float-input" maxlength="10">Username</label>
+      </span>
+      <br>
+      <span class="p-float-label">
+        <input  class="form-control" id="float-input" type="email" pInputText formControlName="email"> 
+        <label for="float-input">Email Id</label>
+      </span>
+      <br>
+      <span class="p-float-label">
+        <input class="form-control" id="float-input" type="number" maxlength="10" pInputText formControlName="phoneNumber"> 
+        <label for="float-input">Mobile number</label>
+      </span>
+      <br>
+      <span class="p-float-label">
+        <input class="form-control" id="float-input" type="password" pInputText formControlName="password"> 
+        <label for="float-input">Password</label>
+      </span>
+      <br>
+      <span class="p-float-label">
+        <input class="form-control" id="float-input" type="password" pInputText formControlName="confirmPassword"> 
+        <label for="float-input">Confirm Password</label>
+      </span>
+     <br>
+     <div class="submit-button">
+      <button pButton pRipple type="submit" label="Sign Up" class="p-button-rounded p-button-danger"></button>&nbsp;&nbsp;&nbsp;
+      <button routerLink="/login" pButton pRipple type="button" label="Already have an account!" class="p-button-info p-button-text"></button>  
+    </div>
+    </form>
+</div>
